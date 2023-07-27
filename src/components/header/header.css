@@ -34,13 +34,9 @@ header {
     background: var(--color-primary);
 }
 
-.me__wrapper {
-    background: linear-gradient(var(--color-primary), transparent) ;   
-}
 
 .me {
-    background:url("../../assets/OIP.png");
-    position: relative;
+   background: linear-gradient(var(--color-primary), transparent);
     background-size: cover;
     width: 22rem;
     height: 30rem;
