@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.css";
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return <section id="portfolio">Portfolio-MY Projects</section>;
 };
 
 export default Portfolio;
