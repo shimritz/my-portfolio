@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/OIP.png";
-import { FaAward } from "react-icons/fa";
+import ME from "../../assets/shimritPic2.jpg";
+
 import { FiAward } from "react-icons/fi";
 import { GiHobbitDwelling } from "react-icons/gi";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -30,7 +30,9 @@ const About = () => {
             <article className="about__card">
               <FiAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1 Year Working-internship</small>
+              <small>1 Year Working-internship </small>
+              <br></br>
+              <small>1 Year Bootcamp-experience</small>
             </article>
 
             <article className="about__card">

@@ -2,12 +2,13 @@ import React from "react";
 import "./footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import Logo from "../../assets/owlLogo.png";
 
 const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
-        Logo
+        <img src={Logo} alt="owl-logo" className="footer__logo-image" />
       </a>
 
       <ul className="permalinks">
