@@ -14,19 +14,18 @@ const data = [
     avatar: AVT1,
     name: "Hauftman Itay",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil",
+      "very responsible , every task was dealt with high care and Attention to details.",
   },
   {
     avatar: AVT2,
     name: "Matrix",
     review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil",
+      "shimrit has high learning ability, very motivated and with good interpersonal skills",
   },
   {
     avatar: AVT1,
     name: "Qelos",
-    review:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil",
+    review: "Quick learner, nice to work with , I see great potential",
   },
 ];
 

@@ -27,8 +27,8 @@ const Services = () => {
         <article className="article">
           <img
             src={ComingSoon}
-            alt="code-image"
-            className="ComingSoon__image"
+            alt="ComingSoon__image"
+            className="article__image"
           />
           <div className="article__description">
             <h3>To Be Added</h3>
@@ -40,8 +40,8 @@ const Services = () => {
         <article className="article">
           <img
             src={ComingSoon}
-            alt="code-image"
-            className="ComingSoon__image"
+            alt="ComingSoon__image"
+            className="article__image"
           />
           <div className="article__description">
             <h3>To Be Added</h3>
