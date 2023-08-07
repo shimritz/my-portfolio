@@ -24,7 +24,7 @@ const About = () => {
             <article className="about__card">
               <GiHobbitDwelling className="about__icon" />
               <h5>Hobbies</h5>
-              <small>coffee & code</small>
+              <small>drinking coffee & code</small>
             </article>
 
             <article className="about__card">
@@ -43,13 +43,12 @@ const About = () => {
           </div>
 
           <p>
-            I am a software developer with a unique blend of experience in
-            software development, quality assurance (QA), and education. My
-            development skills were honed at Qelos, while my meticulous
-            attention to detail in QA was sharpened at Matrix, working on
-            projects for a large financial institution. My experience as a Java
-            Instructor has equipped me with the ability to guide and assist
-            other developers
+            I am a software developer with a unique blend of experience in web
+            development, quality assurance (QA), and education. My development
+            skills were honed at Qelos, while my meticulous attention to detail
+            in QA was sharpened at Matrix, working on projects for a large
+            financial institution. My experience as a Java Instructor has
+            equipped me with the ability to guide and assist other developers
           </p>
 
           <a href="#contact" className="btn btn-primary">

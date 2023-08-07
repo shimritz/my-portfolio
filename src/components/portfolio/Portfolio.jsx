@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/Screenshot N-E APP.png";
 import IMG2 from "../../assets/aroundTheUSapp.png";
-import IMG3 from "../../assets/Screenshot TOURDINATOR APP.png";
+import IMG3 from "../../assets/Screenshot-Tourdinator.png";
 import IMG4 from "../../assets/Screenshot CofeeShop APP.png";
 import IMG5 from "../../assets/QA Automation IMG.jpg";
 
