@@ -33,7 +33,7 @@ const data = [
     image: IMG4,
     title: "Practicum Coffee Shop",
     github: "https://github.com/shimritz/web_project_2.git",
-    demo: "",
+    demo: "https://shimritz.github.io/practicum_coffeeShop_app/",
   },
   {
     id: 5,
@@ -43,50 +43,99 @@ const data = [
     demo: "",
   },
 ];
-const Portfolio = () => {
-  return (
-    <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
-          if (id !== 3 || id !== 5) {
-            return (
-              <article key={id} className="portfolio__item">
-                <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
-                </div>
-                <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target="_blank">
-                    Github
-                  </a>
-                  <a href={demo} className="btn btn-primary" target="_blank">
-                    Live Demo
-                  </a>
-                </div>
-              </article>
-            );
-          } else {
-            return (
-              <article key={id} className="portfolio__item">
-                <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
-                </div>
-                <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target="_blank">
-                    Github
-                  </a>
-                </div>
-              </article>
-            );
-          }
-        })}
-      </div>
-    </section>
-  );
-};
+  const Portfolio = () => {
+    return (
+      <section id="portfolio">
+        <h5>My Recent Work</h5>
+        <h2>Portfolio</h2>
 
-export default Portfolio;
+        <div className="container portfolio__container">
+          {data.map(({ id, image, title, github, demo }) => {
+            if (id !== 3 && id !== 5) {
+              return (
+                <article key={id} className="portfolio__item">
+                  <div className="portfolio__item-image">
+                    <img src={image} alt={title} />
+                  </div>
+                  <h3>{title}</h3>
+                  <div className="portfolio__item-cta">
+                    <a href={github} className="btn" target="_blank">
+                      Github
+                    </a>
+                    <a href={demo} className="btn btn-primary" target="_blank">
+                      Live Demo
+                    </a>
+                  </div>
+                </article>
+              );
+            } else {
+              return (
+                <article key={id} className="portfolio__item">
+                  <div className="portfolio__item-image">
+                    <img src={image} alt={title} />
+                  </div>
+                  <h3>{title}</h3>
+                  <div className="portfolio__item-cta">
+                    <a href={github} className="btn" target="_blank">
+                      Github
+                    </a>
+                  </div>
+                </article>
+              );
+            }
+          })}
+        </div>
+      </section>
+    );
+  };
+
+  export default Portfolio;
+
+// const Portfolio = () => {
+//   return (
+//     <section id="portfolio">
+//       <h5>My Recent Work</h5>
+//       <h2>Portfolio</h2>
+
+//       <div className="container portfolio__container">
+//         {data.map(({ id, image, title, github, demo }) => {
+//           if (id !== 3 || id !== 5) {
+//             return (
+//               <article key={id} className="portfolio__item">
+//                 <div className="portfolio__item-image">
+//                   <img src={image} alt={title} />
+//                 </div>
+//                 <h3>{title}</h3>
+//                 <div className="portfolio__item-cta">
+//                   <a href={github} className="btn" target="_blank">
+//                     Github
+//                   </a>
+//                   <a href={demo} className="btn btn-primary" target="_blank">
+//                     Live Demo
+//                   </a>
+//                 </div>
+//               </article>
+//             );
+//           } else {
+//             return (
+//               <article key={id} className="portfolio__item">
+//                 <div className="portfolio__item-image">
+//                   <img src={image} alt={title} />
+//                 </div>
+//                 <h3>{title}</h3>
+//                 <div className="portfolio__item-cta">
+//                   <a href={github} className="btn" target="_blank">
+//                     Github
+//                   </a>
+//                 </div>
+//               </article>
+//             );
+//           }
+//         })}
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Portfolio;
