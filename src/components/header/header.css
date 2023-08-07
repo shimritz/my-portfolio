@@ -69,6 +69,12 @@ height: 68vh;
     }
 }
 
+@media screen and (max-width: 770px) {
+    .me {
+width: 30rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;

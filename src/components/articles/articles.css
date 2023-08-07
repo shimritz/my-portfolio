@@ -1,0 +1,126 @@
+.articles__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+}
+
+.article {
+    /* background: var(--color-bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px sold var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+    position: relative; */
+    width: 350px;
+    background: #111 50%, #000 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20%;
+
+
+}
+
+
+.article__image {
+    transform: scale(1.3);
+    transition: all 0.3s ease-out;
+}
+
+/* .article:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+} */
+
+.article:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: 0.3;
+
+}
+
+.article:hover .article__description h3 {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.article:hover .article__description p {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.article:hover .article__description a {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.article__description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.9rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.article__description h3 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0 0 20px;
+    transform: translateY(1.7rem);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.article__description p {
+    transform: translateY(1.7rem);
+    opacity:0 ;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.article__description a {
+    color: var(--color-white);
+    background: var(--color-primary);
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    text-decoration: none;
+    border-radius: 0.3rem;
+    opacity: 0;
+    transition: all 0.3s ease-out 0.4s;
+}
+
+.article__description a:hover {
+    background: var(--color-bg);
+}
+
+/* .article__title {
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1);
+} */
+
+
+
+@media screen and (max-width: 1024px) {
+    .articles__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .article {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .articles__container {
+        grid-template-columns: 1fr ;
+        gap: 1.5rem;
+    }
+
+}

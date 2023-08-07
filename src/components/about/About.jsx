@@ -43,11 +43,13 @@ const About = () => {
           </div>
 
           <p>
-            I'm 36 years old and a proud mother of two! I found my interst in
-            web development 3 years ago and started actuall programming 1.5 year
-            ago and ever since I keep learning and challenging myself in I'm
-            currently a full-stack developer intern at Qelos and
-            ....................
+            I am a software developer with a unique blend of experience in
+            software development, quality assurance (QA), and education. My
+            development skills were honed at Qelos, while my meticulous
+            attention to detail in QA was sharpened at Matrix, working on
+            projects for a large financial institution. My experience as a Java
+            Instructor has equipped me with the ability to guide and assist
+            other developers
           </p>
 
           <a href="#contact" className="btn btn-primary">

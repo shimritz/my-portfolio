@@ -1,7 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/Screenshot N-E APP.png";
-import IMG2 from "../../assets/Screenshot Around APP.png";
+import IMG2 from "../../assets/aroundTheUSapp.png";
 import IMG3 from "../../assets/Screenshot TOURDINATOR APP.png";
 import IMG4 from "../../assets/Screenshot CofeeShop APP.png";
 import IMG5 from "../../assets/QA Automation IMG.jpg";
@@ -51,22 +51,38 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
-                  Github
-                </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          );
+          if (id !== 3 || id !== 5) {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href={github} className="btn" target="_blank">
+                    Github
+                  </a>
+                  <a href={demo} className="btn btn-primary" target="_blank">
+                    Live Demo
+                  </a>
+                </div>
+              </article>
+            );
+          } else {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href={github} className="btn" target="_blank">
+                    Github
+                  </a>
+                </div>
+              </article>
+            );
+          }
         })}
       </div>
     </section>
