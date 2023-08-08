@@ -3,11 +3,11 @@ import "./articles.css";
 import CodeImg from "../../assets/code.jpg";
 import ComingSoon from "../../assets/coming-soon-image.jpg";
 
-const Services = () => {
+const Articles = () => {
   return (
     <section id="articles">
       <h5>What I Published</h5>
-      <h2>Articles & Presentations</h2>
+      <h2>Articles</h2>
 
       <div className="container articles__container">
         <article className="article">
@@ -25,24 +25,7 @@ const Services = () => {
         </article>
 
         <article className="article">
-          <img
-            src={ComingSoon}
-            alt="ComingSoon__image"
-            className="article__image"
-          />
-          <div className="article__description">
-            <h3>To Be Added</h3>
-            <p>Working on it!</p>
-            <a href="#">Read More</a>
-          </div>
-        </article>
-
-        <article className="article">
-          <img
-            src={ComingSoon}
-            alt="ComingSoon__image"
-            className="article__image"
-          />
+          <img src={CodeImg} alt="code-image" className="article__image" />
           <div className="article__description">
             <h3>To Be Added</h3>
             <p>Working on it!</p>
@@ -54,4 +37,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Articles;
